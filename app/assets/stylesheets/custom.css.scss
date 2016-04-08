@@ -1,0 +1,144 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.header_position {
+  position: absolute;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.center p {
+  font-size: 250%;   
+}
+
+.left p {
+  align: "right";
+}
+
+.btn-primary {
+  background: #333333;
+}
+
+.this-color:visited {
+  color: white;
+}
+
+.table-condensed {
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 15px;
+  font-size: 1.9em;
+  color: #fff;
+  letter-spacing: -1px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+#nav-link {
+  font-size: 1.3em;
+  letter-spacing: -0.5px;
+  padding-top: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-nav {
+  position: absolute;
+  top: 50%;
+    left: 80%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+#logo:hover {
+  background: #333333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.second h1 {
+  font-size: 3em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+.style h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.style h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+.fat p {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.indent {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.sty hr {
+  background: blue;
+}
+
+
+
+/* header */
+
+
+.navbar {
+  background: #333333;
+}

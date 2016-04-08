@@ -1,0 +1,7 @@
+%div{:class => "center jumbotron homepage standard"} 
+  - @products.each do |product|
+    = link_to "#{product.name} (#{product.price}zł)", product.paypal_url(product)
+    %br
+    %p="Wydałeś na to: #{product.sum_money}"
+
+  %p="Łącznie: #{@all_sum}"
