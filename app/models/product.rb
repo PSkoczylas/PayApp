@@ -6,18 +6,18 @@ class Product < ActiveRecord::Base
   def paypal_url(return_path)
     values = {
         business: "jumpsmerf-facilitator@gmail.com",
-        cmd: "_product",
-        upload: 1,
+        cmd: "_xclick",
+        upload: 3,
         return: return_path,
-        invoice: id,
-        amount: self.price,
-        item_name: self.name,
-        item_number: self.id,
-        quantity: '1'
+        invoice: nr,
+        amount: price,
+        item_name: name,
+        item_number: 1,
+        quantity: 1,
+        notify_url: "#{return_path}notify"
+       # notify_url: "http://localhost:3000/notification"
         #notify_url: "#{Rails.application.secrets.app_host}/hook"
     } 
-    #"https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.map {|k, v| "#{k}=#{v}"}.join("&")
-    #"https://www.sandbox.paypal.com/cgi-bin/webscr?"+ values.to_query
-    "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_json
+    "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 end
