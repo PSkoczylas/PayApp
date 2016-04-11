@@ -5,7 +5,10 @@ class PaymentController < ApplicationController
   end
 
   def notify
-    binding.pry
+    @product = Product.find_by(name: params[:item_name])
+    @product.sum_money+= params[:mc_gross].to_f
+    @product.save
+    redirect_to root_path
   end
 end
 

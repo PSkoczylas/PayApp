@@ -1,7 +1,8 @@
 %div{:class => "center jumbotron homepage standard"} 
   - @products.each do |product|
-    = link_to "#{product.name} (#{product.price}zł)", product.paypal_url(root_url)
+    %div
+      %p= link_to "#{product.name} (#{product.price}$)", product.paypal_url(root_url),:type => "button", :class => "btn btn-primary btn-lg", method: :POST
     %br
-    %p="Wydałeś na to: #{product.sum_money}"
+    %p="Wydałeś na to: #{product.sum_money}$"
 
-  %p="Łącznie: #{@all_sum}"
+  %p="Łącznie: #{@all_sum}$"
