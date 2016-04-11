@@ -7,9 +7,7 @@ class Product < ActiveRecord::Base
     values = {
         business: "jumpsmerf-facilitator@gmail.com",
         cmd: "_xclick",
-        upload: 8,
         return: "#{return_path}notify",
-        invoice: nr,
         amount: price,
         item_name: name,
         item_number: 1,
