@@ -15,8 +15,6 @@ class Product < ActiveRecord::Base
         item_number: 1,
         quantity: 1,
         notify_url: "#{return_path}notify"
-       # notify_url: "http://localhost:3000/notification"
-        #notify_url: "#{Rails.application.secrets.app_host}/hook"
     } 
     "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
   end
