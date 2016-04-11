@@ -12,8 +12,8 @@ class Product < ActiveRecord::Base
         invoice: nr,
         amount: price,
         item_name: name,
-        item_number: 5,
-        quantity: id + 8,
+        item_number: 1,
+        quantity: 1,
         notify_url: "#{return_path}notify"
     } 
     "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
